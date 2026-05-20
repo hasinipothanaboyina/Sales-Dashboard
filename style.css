@@ -16,8 +16,28 @@ header{
 }
 
 header h1{
-  color:#222;
   font-size:32px;
+  color:#222;
+}
+
+.upload-section{
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.upload-section input{
+  padding:10px;
+}
+
+.filters{
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.filters select{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
 }
 
 .kpi-container{
