@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Sales & Revenue Dashboard</title>
 
   <link rel="stylesheet" href="style.css">
 
+  <!-- CHART JS -->
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- PAPA PARSE -->
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
 </head>
+
 <body>
 
   <header>
+
     <h1>Sales & Revenue Analysis Dashboard</h1>
+
   </header>
+
+
+  <!-- FILE UPLOAD -->
+
+  <section class="upload-section">
+
+    <input type="file" id="csvFile" accept=".csv">
+
+  </section>
+
+
+  <!-- FILTERS -->
+
+  <section class="filters">
+
+    <select id="yearFilter">
+
+      <option value="All">All Years</option>
+
+    </select>
+
+  </section>
+
 
   <!-- KPI CARDS -->
 
   <section class="kpi-container">
 
     <div class="card">
-      <h3>Total Revenue</h3>
-      <p id="revenue">₹0</p>
+
+      <h3>Total Income</h3>
+
+      <p id="revenue">₹ 0</p>
+
     </div>
 
     <div class="card">
+
       <h3>Total Profit</h3>
-      <p id="profit">₹0</p>
+
+      <p id="profit">₹ 0</p>
+
     </div>
 
     <div class="card">
-      <h3>Total Orders</h3>
+
+      <h3>Total Records</h3>
+
       <p id="orders">0</p>
+
     </div>
 
     <div class="card">
-      <h3>Top Product</h3>
-      <p id="topProduct">-</p>
+
+      <h3>Dataset</h3>
+
+      <p id="topProduct">Enterprise Survey</p>
+
     </div>
 
   </section>
+
 
   <!-- CHARTS -->
 
   <section class="charts">
 
     <div class="chart-box">
+
       <h2>Revenue Trend</h2>
+
       <canvas id="revenueChart"></canvas>
+
     </div>
 
     <div class="chart-box">
-      <h2>Top Products</h2>
+
+      <h2>Industry Performance</h2>
+
       <canvas id="productChart"></canvas>
+
     </div>
 
   </section>
 
+
   <script src="script.js"></script>
 
 </body>
+
 </html>
