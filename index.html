@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales & Revenue Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Sales & Revenue Analysis Dashboard</h1>
+  </header>
+
+  <!-- KPI CARDS -->
+
+  <section class="kpi-container">
+
+    <div class="card">
+      <h3>Total Revenue</h3>
+      <p id="revenue">₹0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Profit</h3>
+      <p id="profit">₹0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Orders</h3>
+      <p id="orders">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Top Product</h3>
+      <p id="topProduct">-</p>
+    </div>
+
+  </section>
+
+  <!-- CHARTS -->
+
+  <section class="charts">
+
+    <div class="chart-box">
+      <h2>Revenue Trend</h2>
+      <canvas id="revenueChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <h2>Top Products</h2>
+      <canvas id="productChart"></canvas>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
